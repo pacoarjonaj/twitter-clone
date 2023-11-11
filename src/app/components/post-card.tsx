@@ -1,9 +1,8 @@
 'use client'
 
-import {Card, CardHeader, CardBody, CardFooter, Avatar, Button} from "@nextui-org/react";
-import Link from "next/link";
-import { useState } from "react";
-import { IconHeart, IconMessageCircle, IconRepeat } from "@tabler/icons-react";
+import {Card, CardHeader, CardBody, CardFooter, Avatar, Button} from "@nextui-org/react"
+import Link from "next/link"
+import { IconHeart, IconMessageCircle, IconRepeat } from "@tabler/icons-react"
 
 export default function PostCard({
     userFullName,
@@ -16,7 +15,7 @@ export default function PostCard({
     avatarUrl: string,
     content: string
 }) {
-  const [isFollowed, setIsFollowed] = useState(false)
+
 
   return (
     <Card className="bg-transparent shadow-none hover:bg-slate-800 transition border-b rounded-none cursor-pointer border-white/10">

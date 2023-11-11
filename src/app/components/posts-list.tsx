@@ -1,7 +1,8 @@
+import { type Post } from "../types/posts"
 import PostCard from "./post-card"
 
 
-export function PostList ({ posts }) {
+export function PostList ({ posts } : { posts: Post[] | null }) {
     return (
         <>
          {
